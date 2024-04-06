@@ -1,9 +1,19 @@
+/* 
+    This CSS file contains styles for an augmented reality (AR) application.
+*/
+
+/* 
+    Styles for the body element.
+*/
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
+/* 
+    Styles for the container element.
+*/
 .container {
     display: flex;
     justify-content: center;
@@ -11,44 +21,68 @@ body {
     height: auto;
 }
 
+/* 
+    Styles for the main model element.
+*/
 #main-model {
     width: 500px;
     height: 500px;
 }
 
+/* 
+    Styles for the preview model element.
+*/
 #preview-model {
     width: 100px;
     height: 100px;
 }
 
+/* 
+    Styles for the corner model viewer elements.
+*/
 .corner-model-viewer {
     position: absolute;
     width: 200px;
     height: 200px;
 }
 
+/* 
+    Styles for the top left corner model viewer element.
+*/
 .top-left {
     margin-top: 10%;
     top: 40px;
     left: 40px;
 }
 
+/* 
+    Styles for the top right corner model viewer element.
+*/
 .top-right {
     margin-top: 10%;
     top: 40px;
     right: 40px;
 }
 
+/* 
+    Styles for the bottom left corner model viewer element.
+*/
 .bottom-left {
     bottom: 40px;
     left: 40px;
 }
 
+/* 
+    Styles for the bottom right corner model viewer element.
+*/
 .bottom-right {
     bottom: 40px;
     right: 40px;
 }
 
+/* 
+    Styles for the header element.
+*/
 .header {
     display: flex;
     justify-content: center;
@@ -56,11 +90,17 @@ body {
     height: 200px;
 }
 
+/* 
+    Styles for the header image element.
+*/
 .header img {
     max-width: 100%;
     max-height: 100%;
 }
 
+/* 
+    Styles for the model selection element.
+*/
 .model-selection {
     display: flex;
     justify-content: center;
@@ -68,11 +108,17 @@ body {
     margin-top: 20px;
 }
 
+/* 
+    Styles for the model selection button elements.
+*/
 .model-selection button {
     margin: 0 10px;
     position: relative;
 }
 
+/* 
+    Styles for the model selection button pseudo-element.
+*/
 .model-selection button::before {
     content: "";
     position: absolute;
@@ -85,10 +131,16 @@ body {
     display: none;
 }
 
+/* 
+    Styles for the model selection button hover state.
+*/
 .model-selection button:hover::before {
     display: block;
 }
 
+/* 
+    Styles for the model selection button image elements.
+*/
 .model-selection button img {
     max-width: 100%;
     max-height: 100%;
