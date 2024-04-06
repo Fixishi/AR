@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Viewer</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--CSS File-->
+</head>
+<body>
+    <div class="header">
+        <img src="header\Chair_words_00000.png" alt="Header Image"> <!--Header Image-->
+    </div>
+
+    <div class="container">
+        <model-viewer id="main-model" class="model-viewer" src="GLB\Avona.glb" alt="3D Model" auto-rotate camera-controls>  <!--Main Model-->
+            <div slot="hotspot-1" data-position="-0.5m 0.5m 0.3m"> <!--Position of the hotspot x y z -->
+                <button onclick="alert('This is hotspot 1')">Hotspot 1</button> <!--Hotspot Button 1-->
+            </div>
+            <div slot="hotspot-2" data-position="-0.5m 0.8m 0"> <!--Position of the hotspot x y z -->
+                <button onclick="alert('This is hotspot 2')">Hotspot 2</button> <!--Hotspot Button 2--> 
+            </div>
+            <div slot="hotspot-3" data-position="0 -0.1m -0.3m"> <!--Position of the hotspot x y z -->
+                <button onclick="alert('This is hotspot 3')">Hotspot 3</button> <!--Hotspot Button 3-->
+            </div>
+        </model-viewer>
+    </div>
+
+    <div class="model-selection">
+        <button onclick="changeModel('GLB/Avona.glb')"> <!--Change Model-->
+            <model-viewer id="preview-model" class="model-viewer" src="GLB\Avona.glb" alt="3D Model" auto-rotate> <!--Preview Model-->
+            Avona 
+        </button>
+        <button onclick="changeModel('GLB/JRMY.glb')"> <!--Change Model-->
+            <model-viewer id="preview-model" class="model-viewer" src="GLB/JRMY.glb" alt="3D Model" auto-rotate> <!--Preview Model--> 
+            JRMY
+        </button>
+        <button onclick="changeModel('GLB/Oba.glb')"> <!--Change Model-->
+            <model-viewer id="preview-model" class="model-viewer" src="GLB/Oba.glb" alt="3D Model" auto-rotate> <!--Preview Model-->
+            Oba
+        </button>
+        <button onclick="changeModel('GLB/Onsilla.glb')"> <!--Change Model-->
+            <model-viewer id="preview-model" class="model-viewer" src="GLB/Onsilla.glb" alt="3D Model" auto-rotate> <!--Preview Model--> 
+            Onsilla
+        </button>
+        <button onclick="changeModel('GLB/Picard.glb')"> <!--Change Model-->
+            <model-viewer id="preview-model" class="model-viewer" src="GLB/Picard.glb" alt="3D Model" auto-rotate> <!--Preview Model--> 
+            Picard
+        </button>
+    </div>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer"></script> <!--Model Viewer Script-->
+    <script src="js.js"></script> <!--Custom Script-->
+</body>
+</html>
